@@ -48,7 +48,7 @@ void setup() {
 void loop() {
   int tt = millis();
   digitalWrite(LED_BUILTIN, ledOn);
-  while (millis() - tt < 10) {
+  while (millis() - tt < 20) {
     server.handleClient();
   }
 }

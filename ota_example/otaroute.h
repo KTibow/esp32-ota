@@ -1,3 +1,5 @@
+while(!MDNS.begin(host));
+MDNS.addService("http", "tcp", 80);
 server.on("/", HTTP_GET, []() {
 server.sendHeader("Connection", "close");
 server.send(200, "text/html", loginIndex);

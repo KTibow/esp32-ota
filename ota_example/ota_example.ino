@@ -2,8 +2,10 @@
 #include <ESPmDNS.h>
 #include <Update.h>
 #include <WebServer.h>
+#include "ota.h"
 
 WebServer server(80);
+TaskHandle_t Task;
 const char* host = "esp32";
 bool ledOn = false;
 const char* ssid = "yourNetworkName";

@@ -65,3 +65,14 @@ Remember to follow the above guidelines for creating a sketch. **If you forget a
   - Click on "Login". You'll be sent to a URL. Make sure not to share it or let people access your browser history.
 - Then build your sketch:
   - Arduino IDE:
+![Choose Sketch, then Export compiled binary](/exportbin.png)
+  - Platform IO:
+    - Choose compile
+    - Ctrl+Click on something like `Building .pio/build/your_board_here/firmware.bin`
+    - Right-click on the parent folder (`.pio/build/your_board_here`) and choose `Open Containing Folder`
+- Choose `Choose File`
+- Select your `.bin` file
+- Choose `Upload`
+- Don't close the tab, and eventually it'll finish!
+
+**Any errors?** [Let me know.](https://github.com/KTibow/esp32-ota/issues/new)

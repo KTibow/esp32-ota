@@ -153,7 +153,7 @@ String serverIndex = "<!doctype html>"
 "}"
 "}, false);"
 "return xhr;"
-"},">
+"},"
 "success:function(d, s) {"
 "console.log('success!') "
 "},"

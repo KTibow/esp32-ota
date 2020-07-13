@@ -74,7 +74,7 @@ String style =
 "  margin: 10px auto;"
 "  font-size: 15px;"
 "  background: #eee;"
-"  color: purple;"
+"  color: #555;"
 "}"
 "</style>";
 

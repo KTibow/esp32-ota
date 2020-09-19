@@ -6,7 +6,7 @@ Example code for a neat OTA update ESP32 web server:
 - Then wait for it to boot.  
 - And go to [esp32.local](http://esp32.local/). On Windows you might need to install Apple's [Bonjour Print Service](https://support.apple.com/kb/DL999) to use mDNS.
 - This is not a secure login, but partially obfuscated: username and password are `program`
-- Click on "Login". You'll be sent to a URL. Make sure not to share it or let people access your browser history.
+- Click on "Login". You'll be sent to a URL. Make sure not to share it or let people access your browser history (if they have the URL, they can access the login, and upload programs).
 ### Make new sketch
 - Outside of code
   - Make a new sketch like normal.
@@ -61,15 +61,14 @@ xTaskCreatePinnedToCore(
 Remember to follow the above guidelines for creating a sketch. **If you forget and upload a non-OTA capable sketch, you'll lose OTA access** until another one with OTA is uploaded.
 - First, make sure you're logged in:
   - Go to [esp32.local](http://esp32.local/). On Windows you might need to install Apple's [Bonjour Print Service](https://support.apple.com/kb/DL999) to use mDNS.
-  - This is not a secure login, but partially obfuscated: username and password are `program`
+  - This is not a secure login, but partially obfuscated: username and password are `program`. (Feel free to fork and send a PR with more secure functionality!)
   - Click on "Login". You'll be sent to a URL. Make sure not to share it or let people access your browser history.
 - Then build your sketch:
-  - Arduino IDE:
+  - Arduino IDE:  
 ![Choose Sketch, then Export compiled binary](/exportbin.png)
   - Platform IO:
     - Choose compile
-    - Ctrl+Click on something like `Building .pio/build/your_board_here/firmware.bin`
-    - Right-click on the parent folder (`.pio/build/your_board_here`) and choose `Open Containing Folder`
+    - Once compiled, find `.pio/build/your_build_name_here/`
 - Choose `Choose File`
 - Select your `.bin` file
 - Choose `Upload`

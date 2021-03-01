@@ -57,8 +57,10 @@ xTaskCreatePinnedToCore(
   &Task,
   (xPortGetCoreID() == 1) ? 0 : 1);
 ```
+
+
 ### Upload sketch
-Remember to follow the above guidelines for creating a sketch. **If you forget and upload a non-OTA capable sketch, you'll lose OTA access** until another one with OTA is uploaded.
+Remember to follow the above guidelines for creating a sketch. **If you forget** and upload a non-OTA capable sketch, you'll **lose OTA access** until another one with OTA is uploaded.
 - First, make sure you're logged in:
   - Go to [esp32.local](http://esp32.local/). On Windows you might need to install Apple's [Bonjour Print Service](https://support.apple.com/kb/DL999) to use mDNS.
   - This is not a secure login, but partially obfuscated: username and password are `program`. (Feel free to fork and send a PR with more secure functionality!)
